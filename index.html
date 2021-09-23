@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>CGPA Calculator</title>
+        <link rel="icon" type="image/x-icon" href="assets/Screenshot (2191).png" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+            <div class="container px-5">
+                <a class="navbar-brand" href="#page-top">Start</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" onclick="ShowAndHide()">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#con">Contact</a></li>
+                    </ul>
+                    <br>
+                    <DIV ID="SectionName" STYLE="display:none">I am Chaitanya Giram, Engineering student from well know institute in Pune,Maharashtra,India.I developed this site for those who don't know how percentage is calculated from cgpa.So here is the solution this simple site will help you with Cgpa-Percentage calculator.</DIV>
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="masthead text-center text-white">
+            <div class="masthead-content">
+                <div class="container px-5">
+                    <h1 class="masthead-heading mb-0">CGPA-Percentage Calculator</h1>
+                    <h2 class="masthead-subheading mb-0">CGPA to percentage </h2>
+                    <button class="btn btn-primary btn-xl rounded-pill mt-5" href="#" onclick="myFunction()">Tap here </button>
+                    <p id="demo"></p>
+                </div>
+            </div>
+            <div class="bg-circle-1 bg-circle"></div>
+            <div class="bg-circle-2 bg-circle"></div>
+            <div class="bg-circle-3 bg-circle"></div>
+            <div class="bg-circle-4 bg-circle"></div>
+        </header>
+        <!-- Content section 1-->
+        <section id="scroll">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="p-5"><a href="" onclick="cgpa()">
+                        <img class="img-fluid rounded-circle" src="assets/img/Cgpa01.jpg" alt="..." /></a>
+                        <p id="demo1"></p>
+                    </div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="p-5">
+                            
+                            <h2 class="display-4">Your percentage </h2>
+                            <p>See below the photo</p>
+                            Enter Cgpa:
+                            <br> 
+                            <input type="number" id="myNumber" value="2">
+                            <br>
+                            <button class="btn btn-primary btn-xl rounded-pill mt-5" onclick="cgpa()">Try it</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Content section 2-->
+        <section>
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="p-5"><a href="https://assignment-sppu.ml/" target="_blank"><img class="img-fluid rounded-circle" src="assets/img/Cgpa02.jpg" alt="..." /></a></div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="p-5">
+                            <h2 class="display-4">Our Another Website</h2>
+                            <p><b>Tap on the photo</b><br>
+                                <br>
+                                This website is meant for necessary materials and resources of IT Engineering branch students.Have a look there !</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Content section 3
+        <section>
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="assets/img/03.jpg" alt="..." /></div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="p-5">
+                            <h2 class="display-4"></h2>
+                            <p> i, beatae obcaecati.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+            <table class="center">
+                <tr>
+                  <th>Sr.no</th>
+                  <th>CGPA</th>
+                  <th>Class Of Degree Awarded</th>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Greater than and equal to7.75</td>
+                  <td>First class with distiction</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>more than 6.75 but less than 7.75</td>
+                  <td>First Class</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Greater than 6.25 and less than 6.75</td>
+                    <td>Higher Second Class</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Greater than 5.5 and less than 6.25</td>
+                    <td>Second Class</td>
+                </tr>
+            </table>
+            <br>
+            
+           
+        <!-- Footer-->
+        <footer class="py-5 bg-black">
+            <h3 id="con">Contact</h3>
+            <a href="mailto:chaitanyasantosh7709@gmail.com" target="_blank" class="contact1"><img src="assets\img\Gmaillogo.jpg" style="width: 30px; height:30px;"></a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.instagram.com/cs.giram/"  target="_blank" class="contact1"><img src="assets\img\instagram.jpg" style="width: 30px; height: 30px;"></a></div>
+    
+            <div class="container px-5"><p class="m-0 text-center text-white small">Copyright &copy; <a href="https://www.linkedin.com/in/chaitanya-giram-80274b1aa/" target="_blank">Chaitanya Giram</a></p></div>
+           </footer>
+        <!-- Bootstrap core JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
