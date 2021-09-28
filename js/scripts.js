@@ -5,7 +5,9 @@
 */
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
-
+function myclick(){
+      window.alert("You just clicked on Assignment Website");
+};
 function cgpa() {
         var x = document.getElementById("myNumber").value;
         document.getElementById("demo1").innerHTML = x;
