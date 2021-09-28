@@ -11457,6 +11457,11 @@ header.masthead .bg-circle-4 {
   margin-right: auto;
 }
 #SectionName{
+  color: var(--bs-pink);
+ 
+}
+#con{
   color: white;
+
 }
 }
